@@ -6,7 +6,7 @@ devpts               /dev/pts             devpts     mode=0620,ptmxmode=0666,gid
 tmpfs                /run                 tmpfs      mode=0755,nodev,nosuid,strictatime 0  0
 tmpfs                /var/volatile        tmpfs      defaults              0  0
 # this sector number should be double-checked for accuracy when partition map is customized
-/dev/mmcblk0p16      /overlay             ext4       x-systemd.makefs,x-systemd.growfs  0  0
+/dev/mmcblk0p16      /eoi_shared          ext4       x-systemd.makefs,x-systemd.growfs  0  0
 
 # uncomment this if your device has a SD/MMC/Transflash slot
 #/dev/mmcblk0p1       /media/card          auto       defaults,sync,noauto  0  0

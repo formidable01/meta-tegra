@@ -5,10 +5,10 @@ SRC_URI:append = " \
 "
 
 do_install:append() {
-    install -d ${D}/overlay
+    install -d ${D}/eoi_shared
     install -m 0644 ${WORKDIR}/fstab ${D}${sysconfdir}/
 }
 
 FILES_${PN} += " \
-     /overlay.img \
+     /eoi_shared.img \
 "
